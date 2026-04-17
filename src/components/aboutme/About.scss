@@ -1,0 +1,243 @@
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .about-img {
+        max-width: 500px;
+        width: 100%;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .about-info {
+        max-width: 600px;
+        width: 100%;
+
+        .description {
+            h3 {
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                span {
+                    color: var(--second-color);
+                }
+            }
+
+            p {
+                color: var(--third-color);
+                font-size: var(--normal-font-size);
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid var(--liner-color);
+            }
+        }
+
+        .professional-list {
+            display: flex;
+            column-gap: 30px;
+
+            .list-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 15px;
+                margin-bottom: 20px;
+
+                .number {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .text {
+                    color: var(--third-color);
+                    font-size: var(--small-font-size);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1070px) {
+
+
+    .home-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img {
+        order: 1;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .home-info {
+        order: 2;
+    }
+
+    .media-icons {
+        order: 3;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .about-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .professional-list {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .about-img {
+        max-width: 500px;
+        width: 100%;
+
+        img {
+            width: 450px;
+            height: 450px;
+            border-radius: 10%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0 auto;
+        }
+    }
+
+    .about-info {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .about-wrapper {
+        gap: 30px;
+    }
+
+    .description {
+        h3 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-img {
+        max-width: 100%;
+
+    }
+
+    .about-wrapper .about-img img {
+        height: 400px;
+    }
+
+    .about-info {
+        max-width: 100%;
+    }
+
+    .description {
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .professional-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        h3 {
+            font-size: 22px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .list-item {
+        flex-direction: column;
+        text-align: center;
+
+        .number {
+            font-size: 30px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+    .description {
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .list-item {
+        .number {
+            font-size: 26px;
+        }
+    }
+}

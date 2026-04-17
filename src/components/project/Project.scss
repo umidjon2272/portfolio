@@ -1,0 +1,169 @@
+.portfolio-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  height: 320px; 
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  z-index: 2;
+  text-align: left;
+}
+
+.content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.links a {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.inner-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    var(--first-color) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+  text-align: center;
+}
+
+.inner-second-title {
+  position: relative;
+  display: inline-block; 
+  font-size: 25px;
+  font-weight: 700;
+  transform: translateY(-55px);
+  text-align: center;
+}
+
+.inner-second-title::before {
+  content: "";
+  position: absolute;
+  width: 100%; /* endi text width ga teng bo‘ladi */
+  height: 5px;
+  left: 0;
+  bottom: -5px;
+  background: var(--second-color);
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+/* 992px dan kichik */
+@media (max-width: 992px) {
+  .inner-title {
+    font-size: 50px;
+  }
+
+  .inner-second-title {
+    font-size: 22px;
+    transform: translateY(-45px);
+  }
+}
+
+/* 700px dan kichik */
+@media (max-width: 700px) {
+  .inner-title {
+    font-size: 42px;
+  }
+
+  .inner-second-title {
+    font-size: 20px;
+    transform: translateY(-35px);
+  }
+}
+
+/* 480px dan kichik */
+@media (max-width: 480px) {
+  .inner-title {
+    font-size: 34px;
+  }
+
+  .inner-second-title {
+    font-size: 18px;
+    transform: translateY(-25px);
+  }
+}
+
+/* 320px dan kichik */
+@media (max-width: 320px) {
+  .inner-title {
+    font-size: 28px;
+  }
+
+  .inner-second-title {
+    font-size: 16px;
+    transform: translateY(-20px);
+  }
+}

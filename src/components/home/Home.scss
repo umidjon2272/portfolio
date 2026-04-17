@@ -1,0 +1,268 @@
+.home {
+    padding: 100px 0px 0px 0px;
+}
+
+
+
+.home-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 190px;
+    margin-top: 50px;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.media-icons a {
+    color: var(--second-color);
+    font-size: 32px;
+}
+
+.media-icons a:hover {
+    color: var(--hover-color);
+}
+
+.home-info h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-info h3 {
+    color: var(--third-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.home-info p {
+    font-size: var(--normal-font-size);
+    columns: var(--third-color);
+    max-width: 350px;
+    width: 100%;
+}
+
+.inner-info-link {
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.inner-info-link:hover {
+    background: var(--hover-color);
+}
+
+.home-img img {
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s ease;
+}
+
+.home-img img:hover {
+    transform: rotate(3deg);
+    transform: translateX() rotate(3deg);
+}
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto 0;
+    width: 120px;
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    text-decoration: none;
+
+    svg {
+        color: var(--second-color);
+        font-size: 18px;
+        animation: arrow-down 2s ease infinite;
+    }
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(10px);
+    }
+}
+
+.telegram {
+    transition: 1s;
+}
+
+.telegram:hover {
+    color: #0088cc;
+    scale: 1.2;
+}
+
+.instagram {
+    transition: 1s;
+}
+
+.instagram:hover {
+    color: #0088cc;
+    scale: 1.2;
+}
+
+.githubh {
+    transition: 1s;
+}
+
+.github:hover {
+    color: #0088cc;
+    scale: 1.2;
+}
+
+@media (max-width: 1200px) {
+    .home-info h1 {
+        font-size: 50px;
+    }
+
+    .home-wrapper {
+        gap: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-info h1 {
+        font-size: 45px;
+    }
+
+    .media-icons {
+        gap: 30px;
+    }
+
+    .home-wrapper {
+        gap: 130px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-info h1 {
+        font-size: 40px;
+    }
+
+    .home-wrapper {
+        gap: 30px;
+    }
+
+    .home-wrapper {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-wrapper {
+        gap: 70px;
+        margin-top: 30px;
+    }
+
+    .home-img {
+        order: 1;
+    }
+
+    .home-info {
+        order: 2;
+    }
+
+    .media-icons {
+        order: 3;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .home-info h1 {
+        font-size: 35px;
+    }
+
+    .home {
+        padding: 50px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-info h1 {
+        font-size: 30px;
+    }
+
+    .inner-info-link {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .home-wrapper {
+        gap: 20px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .home-info h1 {
+        font-size: 26px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .home-info h3 {
+        font-size: 16px;
+    }
+
+    .home-img img {
+        height: 400px;
+    }
+
+    .home-wrapper {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .inner-info-link {
+        margin-top: 20px;
+        width: 140px;
+        height: 45px;
+        font-size: 11px;
+    }
+
+    .media-icons {
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .scroll-down {
+        margin: 0px auto 0;
+    }
+
+}
