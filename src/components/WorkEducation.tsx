@@ -6,7 +6,7 @@ function WorkEducation() {
     <section id="work" className="section">
       <div className="container">
         <span className="section-label">Work & Education</span>
-        <h2 className="section-title">My journey soo far</h2>
+        <h2 className="section-title">My journey so far</h2>
         <p className="section-subtitle">
           How I got started, what I've learned, and where I'm headed.
         </p>
