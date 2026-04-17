@@ -1,4 +1,4 @@
-import './../src/sass/main.scss'
+import '../src/sass/Main.scss'
 import { Header, Home, About, Skilss, } from './components'
 import Contact from './components/contact/Contact'
 import Project from './components/project/Project'
